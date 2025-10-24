@@ -20,7 +20,7 @@
             
             .bodyContainer{
                 /* background-color: plum; */
-                background-image: url(/testTask/images/bgTestTaskLg_compressed.webp);
+                background-image: url(../images/bgTestTaskLg_compressed.webp);
                 background-size: cover;
                 background-position: center;
 
