@@ -1,0 +1,264 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>selbsthilfePRO</title>
+
+        <!-- Preconnect to Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Preload and load googlefonts asynchronously -->
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;600&display=swap" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;600&display=swap"></noscript>
+
+        <!-- import & preload css -->
+         <link rel="preload" href="/testTask/styles/global.css" as="style" onload="this.rel='stylesheet'">
+
+         <!-- preload images -->
+         <link rel="preload" as="image" href="/testTask/images/logo.png"> 
+         <link rel="preload" as="image" href="/testTask/images/bgTestTaskLg_compressed.webp" fetch-priority="high">
+         <link rel="preload" as="image" href="/testTask/images/blog.png">
+
+         
+         <!-- font awesome link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+              
+    </head>
+    <body>
+
+        <div class="bodyContainer" id="bodyContainer">
+            <!-- aria description for the visually impaired -->
+            <p class="sr-only">selbsthilfePRO is a simple, accessible, responsive dropdown Menu</p>
+
+            <header>
+                <!-- Navigation bar -->
+                <!-- outer layer -->
+                <div class="navContainer" id="navContainer">
+                    <div class="navContainer_inner" id="navContainer_inner">
+                        <nav class="navWrapper" id="navWrapper">
+
+                            <!-- Navogation options -->
+                            <ul class="navWrapper content" id="navWrapper content">
+                                <li class="logoNtext" aria-hidden="true">
+                                    <div class="logoBox" id="logoBox">
+                                        <img src="/testTask/images/logo.png" alt="" class="logo" id="logo">
+                                    </div>
+                                    <p class="selbstHilfeText" aria-label="website name">Selbsthilfe<span class="pro">PRO</span></span></p>
+                                </li>
+                                <li class="navigationOptions">
+                                    <div class="productBox" id="productBox">
+                                        <a href="" class="buttonProduct" id="buttonProduct">
+                                            <span>Produkte</span>
+                                        </a>
+                                    </div>
+                                    <div class="schulengenBox" id="schulengenBox" >
+                                        <a href="" class="buttonSchulungen" id="buttonSchulungen" aria-label="click to open schulungen menu">
+                                            <span>Schulungen</span>
+                                            <span class="chevronBox" id="chevronBox">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                                <i class="fa-solid fa-chevron-up" ></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="gemeinBox" id="gemeinBox">
+                                        <a href="" class="buttonGemein" id="buttonGemein">
+                                            <span>Gemeinnützigkeit</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- Hamburger Menu for smaller screens -->
+                            <ul class="hamburger_Menu" id="hamburger_Menu">
+                                <li class="hamburger_icon" id="hamburger_icon">
+                                    <button class="buttonHamburger" id="buttonHamburger" aria-label=" navigationOptions" aria-expanded="false">
+                                        <i class="fa-solid fa-bars"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                                <!-- live region to announce menustatus -->
+                                 <p id="menuStatus" class="sr-only" aria-live="polite"></p>
+
+                            <!-- LogIn $ KONTAKT Buttons -->
+                            <ul class="navActions" id="navActions">
+                                <li class="buttonLogInBox" id="buttonLogInBox">
+                                    <a href="" class="buttonLogIn" id="buttonLogIn" aria-label="click to login">
+                                        <span>Log In</span>
+                                    </a>
+                                </li>
+                                <li class=" kontaktBox" id="kontaktBox">
+                                    <a href="" class="buttonKontakt" id="buttonKontakt" aria-label="click to see contacts" >
+                                        <span>Kontakt</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            
+
+
+                            <!-- Navigation Options for smaller screens -->
+                            <div class="mobile_navigationOptions " id="mobile_navigationOptions">
+                                <a href="" class="mobile_buttonProduct" id="mobile_buttonProduct">
+                                        <span>Produkte</span>
+                                    </a>
+                                <hr>
+                                <a href="" class="mobile_buttonSchulungen" id="mobile_buttonSchulungen" aria-expanded="false" aria-label="schulungen collapsed">
+                                        <span>Schulungen</span> 
+                                        <span class="chevronBox_mobile" id="chevronBox_mobile">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                                <i class="fa-solid fa-chevron-up" ></i>
+                                        </span>
+                                    </a>
+                                <hr>
+                                <a href="" class="mobile_buttonGemein" id="mobile_buttonGemein">
+                                        <span>Gemeinnützigkeit</span>
+                                    </a>
+                                <hr>
+                            </div>
+
+
+
+                 <!-- Menu -->
+                <!-- Menu box -->
+                <div id="menuBox" class="menuBox" role="menu">
+
+                    <!-- Menu_Side_A -->
+                    <div id="contentA" class="contentA">
+                    <!-- Nav-menu-items -->
+                        <!-- Nav_menu_item_A -->
+                        <div id="Nav_menu_item_A" class="Nav_menu_item Nav_menu_item_A" role="menu-item" tabindex="0">
+                            <div id="iconWrapper" class="iconWrapper" aria-hidden="true">
+                                <img src="/testTask/images/blog.png" alt="blogIcon" class="iconWrapper image1">
+                            </div>
+                            <div id="content" class="content">
+                                <!-- Text and badge -->
+                                <div class="textAndBadge">
+                                    <p >Blogs</p>
+                                </div>
+                                <!-- supporting text -->
+                                <div class="tNbadgeSupportingText">
+                                    <p>The Latest industry new and guides curated by our expert team</p>
+                                </div>
+                            </div>
+                            <!-- <div id="cursor" class="cursor">
+
+                            </div> -->
+                        </div>
+
+
+                        <!-- Nav_menu_item_B -->
+                        <div id="Nav_menu_item_B" class="Nav_menu_item Nav_menu_item_B" role="menu-item" tabindex="0">
+                            <div id="iconWrapper" class="iconWrapper" aria-hidden="true">
+                                <img src="/testTask/images/cStories.png" alt="customer stories icon" class="iconWrapper image2">
+                            </div>
+                            <div id="content" class="content">
+                                <!-- Text and badge -->
+                                <div class="textAndBadge">
+                                    <p >Customer Stories</p>
+                                </div>
+                                <!-- supporting text -->
+                                <div class="tNbadgeSupportingText">
+                                    <p>Learn how our customers are using Untitled UI to 10x their growth.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Nav_menu_item_C -->
+                        <div id="Nav_menu_item_C" class="Nav_menu_item Nav_menu_item_C" role="menu-item" tabindex="0">
+
+                            <div id="iconWrapper" class="iconWrapper" aria-hidden="true">
+                                <img src="/testTask/images/vTutorials.png" alt="videotutorials icon" class="iconWrapper image3">
+                            </div>
+                            <div id="content" class="content">
+                                <!-- Text and badge -->
+                                <div class="textAndBadge">
+                                    <p >Video tutorials</p>
+                                </div>
+                                <!-- supporting text -->
+                                <div class="tNbadgeSupportingText">
+                                    <p>Get up and running on our newest features and in-depth guides.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Nav_menu_item_D -->
+                        <div id="Nav_menu_item_D" class="Nav_menu_item Nav_menu_item_D" role="menu-item" tabindex="0">
+                            <div id="iconWrapper" class="iconWrapper" aria-hidden="true">
+                                <img src="/testTask/images/documentation.png" alt="documentation icon" class="iconWrapper image4">
+                            </div>
+                            <div id="content" class="content">
+                                <!-- Text and badge -->
+                                <div class="textAndBadge">
+                                    <p >Documentation</p>
+                                </div>
+                                <!-- supporting text -->
+                                <div class="tNbadgeSupportingText">
+                                    <p>In-depth articles on our tools and technologies to empower teams.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <!-- Menu_Side_B -->
+                    <div id="contentB" class="contentB">
+                        <div id="Nav_item_menu_card" class="Nav_item_menu_card">
+                            <!-- image -->
+                            <div id="imageWrap" class="Nav_item_menu_card imageWrap" role="menu-item" tabindex="0">
+                                <img src="/testTask/images/wrappImage.jpg" alt="happy client image" id="wrapImage" class="wrapImage">
+                            </div>
+                            <!-- supporting texts -->
+                            <div id="content" class="Nav_item_menu_card content" role="menu-item" tabindex="0">
+                                <div id="textNsupportingTxt" class="textNsupportingTxt">
+                                    <!-- text A -->
+                                    <p class="textA">We've just released an update!</p>
+                                    <!-- supporting text B -->
+                                    <div class="textB">
+                                        <p > Check out the all new dashboard view </p>
+                                        <p > Pages now load 3x faster </p>
+                                    </div>
+                                </div>
+
+                                <!-- buttons -->
+                                <div id="actions" class="actions">
+                                    <a href="">
+                                        <button id="buttonDismiss" class="buttonDismiss">
+                                            Dismiss
+                                        </button>
+                                    </a>
+                                    <a href="">
+                                        <button id="buttonChangelog" class="buttonChangelog">
+                                            Changelog
+                                        </button>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                </div>
+           
+            
+
+            </header>
+        </div>
+
+        
+
+        
+       
+
+        <!-- import js -->
+        <script src="/testTask/index.js"></script>
+    </body>
+    </html>

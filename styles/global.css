@@ -1,0 +1,40 @@
+
+
+/* mobile */
+    @import url("mobile.css");
+
+/* above 1024px */
+    @import url("default.css"); 
+    
+/* responsive navbar */
+    @import url("responsiveNav.css"); 
+
+    /* default body styling */
+    .bodyContainer{
+        /* background-color: plum; */
+        background-image: url(/testTask/images/bgTestTaskLg_compressed.webp);
+        background-size: cover;
+        background-position: center;
+
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* for screen readers */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }

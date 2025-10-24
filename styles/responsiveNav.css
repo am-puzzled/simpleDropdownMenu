@@ -1,0 +1,206 @@
+
+/* For navigationbars within this range */
+   @media (max-width: 1440px) {
+             
+    /* Container adjustments */
+    .navContainer {
+        width: 96vw;
+        height: clamp(50px, 12vh, 74px);
+        padding-top: 8px;
+
+        display: flex;       
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* background-color: orange; */
+    }
+
+    .navContainer_inner {
+        display: contents;          /* Hide */
+    }
+
+    /* Navbar wrapper */
+    .navWrapper {
+        background-color: hsla(0, 0%, 100%, 1);
+        width: 90%;              
+        height: auto;
+        max-height: 64px;             
+        padding: clamp(2px, 1vw, 8px);    
+        
+        display: flex;
+        flex-wrap: nowrap;          
+        justify-content: space-between;
+        align-items: center;
+
+        border-radius:9999px;
+        border: 1px solid hsla(0, 0%, 0%, 0.08);
+        box-shadow: 0px 4px 16px hsla(220, 29%, 5%, 0.05);
+        backdrop-filter: blur(2px);
+    }
+
+        /* Navbar content */
+        .navWrapper .content {
+            display: contents;
+            /* background-color: lawngreen; */
+        }
+
+            /* Logo & text adjustments */
+            .logoNtext {
+                /* background-color: orange; */
+                width: 40%;
+                gap:clamp(4px, 1vw, 12px);
+
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-wrap: nowrap;
+
+            }
+                .logoBox{
+                    /* background-color: lightcoral; */
+                        
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    .logo{
+                            width: clamp(20px, 6vw, 38px);
+                            height: auto;
+                            max-height: 19px;
+                            object-fit: cover;
+                            object-position: center;
+                            color: hsla(245, 25%, 30%, 1);
+                        }
+                    .selbstHilfeText{
+                        /* background-color: lightblue; */
+                        font-family: "Atkinson Hyperlegible  Next", sans-serif;
+                        font-weight: 700;
+                        font-size: clamp(14px, 2.5vw, 24px);
+                        line-height: clamp(16px, 3vw, 28px);
+                        text-align: center;
+                        color:hsla(0, 0%, 0%, 0.8);
+                    }
+                        .pro{
+                            color:hsla(4, 74%, 49%, 1) ;
+                        }
+
+
+
+    /* Navigation buttons  */
+    .navigationOptions {
+         display: none;
+        /* background-color: white; */
+    }
+
+
+    .hamburger_Menu {
+        /* background-color: orange; */
+        width: 10%;
+        height: clamp(28px, 10vw, 42px);
+        border-radius: 8px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none; /* remove bullets */
+        padding: 0;
+        margin: 0;
+    }
+
+        .hamburger_icon {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+            .buttonHamburger {
+                font-size: clamp(16px, 4vw, 22px);
+                color: hsla(0, 0%, 20%, 1);
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .buttonHamburger:hover {
+                color: hsla(0, 0%, 0%, 0.7);
+                transform: scale(1.2);
+                transition: all 0.25s ease-in-out;
+            }
+
+
+
+    /* ===== RIGHT-SIDE ACTIONS ===== */
+    .navActions {
+    /* background-color: orange; */
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: clamp(6px, 2vw, 12px);
+    }
+
+        /* keep them as flex items */
+        .buttonLogInBox,
+        .kontaktBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1; /* allow buttons to share space evenly */
+        min-width: clamp(60px, 30%, 120px);
+        }
+
+            /* ===== BUTTONS ===== */
+            .buttonLogIn,
+            .buttonKontakt {
+            background-color: hsla(0, 0%, 100%, 1);
+            width: 100%; /* fill their flex box */
+            max-width: 82px;
+            height: clamp(28px, 4.5vw, 40px);
+            border-radius: 9999px;
+            border: 1px solid hsla(220, 6%, 85%, 1);
+            cursor: pointer;
+            padding: clamp(4px, 2vw, 8px) clamp(8px, 2vw, 14px);
+            box-shadow:
+                0 1px 2px 0 hsla(220, 29%, 5%, 0.05),
+                0 -2px 0 0 hsla(220, 29%, 5%, 0.05) inset,
+                0 0 0 1px hsla(220, 29%, 5%, 0.18) inset;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            font-family: "Atkinson Hyperlegible Next", sans-serif;
+            font-weight: 600;
+            font-size: clamp(10px, 1.8vw, 14px);
+            text-decoration: none;
+            line-height: 1.2;
+            transition: all 0.25s ease-in-out;
+            }
+
+            /* ===== CONTACT BUTTON VARIANT ===== */
+            .buttonKontakt {
+            background-color: hsla(4, 74%, 49%, 1);
+            color: hsla(0, 0%, 100%, 1);
+            border: 2px solid transparent;
+            }
+
+                /* ===== HOVER STATES ===== */
+                .buttonLogIn:hover {
+                background-color: white;
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+                border-color: blue;
+                transform: scale(1.05);
+                }
+
+                .buttonKontakt:hover {
+                background-color: hsla(4, 74%, 49%, 0.9);
+                box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+                border-color: black;
+                transform: scale(1.05);
+                }
+        }

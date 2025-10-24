@@ -1,0 +1,635 @@
+
+            *,
+            *::before,
+            *::after {
+            box-sizing: border-box;
+            }
+
+
+            @media (min-width: 1440px) {
+            header{
+                /* background-color: rgba(128, 128, 128, 0.1); */
+                /* background-color: plum; */
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3px;
+            }
+            
+            .bodyContainer{
+                /* background-color: plum; */
+                background-image: url(/testTask/images/bgTestTaskLg_compressed.webp);
+                background-size: cover;
+                background-position: center;
+
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+            }
+
+
+            /* Header */
+              /* Navbar */
+                .navContainer{
+                    /* background-color: lightblue; */
+                    width: 100%;
+                    min-width: 1440px;
+                    height: 76px;
+                    padding-top: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                  .navContainer_inner{
+                    /* background-color: lawngreen; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-width:1280px;
+                    height: 64px;
+                    padding-left: 32px;
+                    padding-right: 32px;
+                    gap: 0;
+
+                  }
+                    .navWrapper{
+                        background-color: hsla(0, 0%, 100%, 1);
+                        width: 1216px;
+                        height: 64px;
+                        padding: 12px 12px 12px 12px;
+                        gap: 16px;
+                        border-radius:9999px;
+                        border: 1px solid hsla(0, 0%, 0%, 0.08);
+                        box-shadow: 0px 4px 16px hsla(220, 29%, 5%, 0.05);
+                        backdrop-filter: blur(2px);
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                      .navWrapper .content{
+                        /* background-color: orange; */
+                        background-color: transparent;
+                        width: 1006px;
+                        height: 36px;
+                        gap: 20px;
+                        border-radius: 0%;
+                        border: none;
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      }
+                        .logoNtext{
+                            /* background-color: white; */
+                            width: 234px;
+                            height: 36px;
+                            border-radius: 99px;
+
+                            gap: 8px;
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+
+                            .logoBox{
+                                /* background-color: lightcoral; */
+                                width: 38px;
+                                height: 19px;
+                                text-align: center;
+                            }
+                                .logo{
+                                    width: 38px;
+                                    height: 19px;
+                                    object-fit: cover;
+                                    object-position: center;
+                                    color: hsla(245, 25%, 30%, 1);
+                                }
+                            .selbstHilfeText{
+                                font-family: "Atkinson Hyperlegible  Next", sans-serif;
+                                font-weight: 700;
+                                font-size: 25px;
+                                line-height: 24px;
+                                text-align: center;
+                                color:hsla(0, 0%, 0%, 0.8) ;
+                            }
+                                .pro{
+                                    color:hsla(4, 74%, 49%, 1) ;
+                                }
+
+                        
+                        .navigationOptions{
+                            /* background-color: white; */
+                            width: 751px;
+                            height: 32px;
+                            gap: 2px;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                            .productBox, .schulengenBox, .gemeinBox{
+                                /* background-color: lawngreen; */
+                                width: 82px;
+                                height: 32px;
+                                border-radius: 8px;
+                                padding: 4px 6px 4px 6px;
+                                gap: 4px;
+
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .productBox{
+                                width: 91px;
+                            }
+                            .schulengenBox{
+                                width: 121px;
+                        
+                            }
+                            .gemeinBox{
+                                width: 146px;
+                            }
+                                .buttonProduct, .buttonSchulungen, .buttonGemein{
+                                    /* background-color: aquamarine; */
+                                    height: 24px;
+                                    text-decoration: none;
+                                    padding: 0 2px 0 2px;
+                                    gap: 4px;
+
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                .productBox:hover, .schulengenBox:hover, .gemeinBox:hover{
+                                    /* padding: 8px;
+                                    border-radius: 4px; */
+                                    background-color:rgba(0, 0, 0, 0.2);
+                                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+                                    /* border: 1px solid rgba(0, 0, 255, 0.619); */
+                                    cursor: pointer;
+                                    transform: scale(1.05);
+                                    transition: all 0.2s ease-in-out;
+
+                                }
+
+                                 .buttonProduct{
+                                    width: 70px;
+                                 }
+                
+                                    .chevronBox{
+                                        /* background-color: orange; */
+                                        width: 16px;
+                                        height: 16px;
+                                    
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                       
+                                        .fa-chevron-down,
+                                        .fa-chevron-up {
+                                            position: absolute;
+                                            width: 8px;
+                                            font-size: 10px;
+                                            color: hsla(220, 11%, 29%, 1);
+                                            transition: opacity 0.25s ease-in-out;
+                                        }
+
+                                        /* initial states */
+                                        .fa-chevron-up {
+                                            opacity: 0;
+                                        }
+                                        .chevronBox .fa-chevron-down {
+                                            opacity: 1;
+                                        }
+
+                                        /* active states */
+                                        .chevronBox.active .fa-chevron-up {
+                                            opacity: 1;
+                                        }
+
+                                        .chevronBox.active .fa-chevron-down {
+                                            opacity: 0;
+                                        }
+
+                                 .buttonGemein{
+                                    width: 134px;
+                                 }
+
+                                    .buttonProduct span, .buttonSchulungen span, .buttonGemein span{
+                                        font-family: "Atkinson Hyperlegible  Next", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        color:hsla(220, 11%, 29%, 1) ;
+                                    }
+                                    
+                                 
+                                    
+                    /* Hamburger-menu */
+                    .hamburger_Menu{
+                        display: none;
+                    }
+
+                    /* mobile_navigationOptions */
+                    .mobile_navigationOptions{
+                        display: none;
+                    }
+                            
+                        
+
+                /* Navbar side 2 */
+                      .navActions{
+                        /* background-color: orange; */
+                        width: 166px;
+                        height: 40px;
+                        gap: 12px;
+                        border-radius: 0%;
+                        padding: 0;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                      }
+                        .buttonLogInBox, .kontaktBox {
+                            background-color: hsla(0, 0%, 100%, 1);
+                            width: 72px;
+                            height: 40px;
+                            border-radius: 9999px;
+                            border: 1px solid hsla(220, 6%, 85%, 1);
+                            cursor: pointer;
+                            padding: 10px 14px 10px 14px;
+                            gap: 4px;
+                            box-shadow:
+                                0 1px 2px 0 hsla(220, 29%, 5%, 0.05),
+                                0 -2px 0 0 hsla(220, 29%, 5%, 0.05) inset,
+                                0 0 0 1px hsla(220, 29%, 5%, 0.18) inset;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                        }
+                        .kontaktBox {
+                            background-color: hsla(4, 74%, 49%, 1);
+                            width: 82px;
+                            border: 2px solid hsla(0, 0%, 100%, 0);
+                 
+                        }
+                            .buttonLogIn{
+                                width: 44px;
+                                height: 20px;
+                                /* padding: 0 2px 0 2px; */
+                                text-decoration: none;
+
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                                .buttonLogIn span{
+                                    /* background-color: orange; */
+                                    font-family: "Atkinson Hyperlegible  Next", sans-serif;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    min-width: 40px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    color:hsla(220, 11%, 29%, 1) ;
+                                }
+                                    .buttonLogInBox:hover{
+                                        background-color:white;
+                                        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+                                        border: 1px solid blue;
+                                        cursor: pointer;
+                                        transform: scale(1.05);
+                                        transition: all 0.2s ease-in-out;
+
+                                    }
+                            .buttonKontakt{
+                                width: 54px;
+                                height: 20px;
+                                padding: 0 2px 0 2px;
+                                text-decoration: none;
+
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                                .kontaktBox:hover{
+                                    background-color:hsla(4, 74%, 49%, 0.9);
+                                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+                                    border: 1px solid black;
+                                    cursor: pointer;
+                                    transform: scale(1.05);
+                                    transition: all 0.2s ease-in-out;
+
+                                }
+                                .buttonKontakt span{
+                                    font-family: "Atkinson Hyperlegible  Next", sans-serif;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color:hsla(0, 0%, 100%, 1) ;
+                                }
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Menu*/
+                .menuBox{
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateX(-10px);
+                    transition: all 0.4s ease-in-out;
+                    position: relative;
+                }
+                .menuBoxActive{
+                    /* background-color:hsla(0, 0%, 100%, 1); */
+                    background-color: hsla(0, 0%, 98%, 1);
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    max-width: 640px;
+                    max-height: 388px;
+                    border-radius: 16px;
+                    opacity: 1;
+                    border-width:1px;
+                    border-style: hsla(0, 0%, 0%, 0.08) solid;
+                    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1); 
+
+                    /* animation */
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateX(0);
+ ;
+                }
+                    .contentA{
+                       
+                        /* background-color: orange; */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        width: 336px;
+                        height: 388px;
+                        opacity: 1;
+                        gap: 2px;
+                        padding: 8px;
+                        
+                    }
+                        .Nav_menu_item_A,
+                        .Nav_menu_item_B,
+                        .Nav_menu_item_C,
+                        .Nav_menu_item_D{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 320px;
+                            height: 91px;
+                            border-radius: 8px;
+                            padding: 12px;
+                            gap: 12px;
+                            /* background-color: white; */
+                        }
+
+                          .Nav_menu_item_A{
+                             background-color:rgba(128, 128, 128, 0.03);
+                          }
+                            /* Hover properties */
+                            .Nav_menu_item_A:hover,
+                            .Nav_menu_item_B:hover,
+                            .Nav_menu_item_C:hover,
+                            .Nav_menu_item_D:hover{
+                                background-color:rgba(128, 128, 128, 0.2);
+                                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+                                cursor: pointer;
+                                transform: scale(1.01);
+                                transition: all 0.1s ease-in-out;
+
+                            }
+                         
+                            .Nav_menu_item .iconWrapper{
+                                /* background-color: lawngreen; */
+                                width: 44px;
+                                height:67px;
+                                text-align: center;
+                            }
+                                .iconWrapper .image1,
+                                .iconWrapper .image2,
+                                .iconWrapper .image3,
+                                .iconWrapper .image4{
+                                    width: 20px;
+                                    height:22px;
+                                    object-fit: cover;
+                                    object-position: center;
+                                    padding: 2px 0 0 0;
+                                    color: hsla(244, 25%, 49%, 1);
+                                }
+
+                            .Nav_menu_item .content{
+                                /* background-color: lawngreen; */
+                                width: 264px;
+                                height:67px;
+                                gap: 12px;
+                            }
+                                .textAndBadge{
+                                    width: 100%;
+                                    height: 24px;
+                                    gap: 8px;
+                                    display: flex;
+                                    justify-content: start;
+                                    align-items: center;
+                                }
+                                    .textAndBadge p{
+                                        width: 100%;
+                                        height: 24px;
+                                        margin: 0;
+                                        padding: 0;
+                                        font-family: "Atkinson Hyperlegible  Next", sans-serif;
+                                        font-weight: 600;
+                                        letter-spacing: 0px;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        color:hsla(220, 24%, 12%, 1);
+                                    }
+                                    .tNbadgeSupportingText p{
+                                        width: 100%;
+                                        height: 40px;
+                                        margin: 0;
+                                        padding: 0;
+                                        font-family: "Atkinson Hyperlegible  Next", sans-serif;
+                                        font-weight: 400;
+                                        letter-spacing: 0px;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color:hsla(220, 8%, 35%, 1);    
+                                    }
+
+
+
+                    .contentB{
+                         background-color:rgba(128, 128, 128, 0.03);
+                        /* background-color:hsla(0, 0%, 98%, 1); */
+;
+                        /* background-color: lightgreen; */
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: start;
+
+                        
+                        max-width: 304px;
+                        height: 388px;
+                        padding: 8px 8px 12px 8px;
+                    }
+                     .contentB:hover{
+                         background-color:rgba(128, 128, 128, 0.1);
+                        transition: all 0.2s ease-in-out;
+                     }
+                        .Nav_item_menu_card{
+                            /* background-color: white; */
+                            width: 288px;
+                            height: 300px;
+                            border-radius: 8px;
+                            padding: 12px;
+                            gap: 16px;
+
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: start;
+                        }
+                            .imageWrap{
+                                /* background-color: aqua; */
+                                width: 240px;
+                                height: 160px;
+                                border-radius: 6px;
+                                padding: 0;
+                            }
+                             .wrapImage{
+                                height: 100%;
+                                width: 100%;
+                                max-width: 240px;
+                                max-height: 160px;
+                                border-radius: 6px;
+                                object-fit: cover;
+                                object-position: center;
+                             }
+                            .Nav_item_menu_card .content{
+                                /* background-color: aqua; */
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: start;
+                                flex-direction: column;
+                                /* flex-wrap: wrap; */
+                                width: 264px;
+                                height: 100px;
+                                padding: 0;
+                                gap: 0;
+
+                            }
+                            .textNsupportingTxt{
+                                /* background-color: lightcoral; */
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                /* flex-wrap: wrap; */
+                                width: 264px;
+                                height: auto;
+                                gap: 4px;
+                            }
+                                .textA{
+                                    width: 100%;
+                                    height: 24px;
+                                    margin: 0;
+                                    padding: 0;
+                                    font-family:"Atkinson Hyperlegible  Next", sans-serif;
+                                    font-weight: 600;
+                                    letter-spacing: 0px;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color:hsla(220, 24%, 12%, 1);
+
+                                }
+                                .textB{
+                                    width: 100%;
+                                    height: 40px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: start;
+                                    flex-wrap: wrap;
+                                }
+                                  .textB p{
+                                    margin: 0;
+                                    padding: 0;
+                                    font-family: "Atkinson Hyperlegible  Next", sans-serif;
+                                    font-weight: 400;
+                                    letter-spacing: 0px;
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                    color:hsla(220, 8%, 35%, 1);
+                                  }
+                            .actions{
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+                                width: 132px;
+                                height: 20px;
+                                gap: 12px;
+                                padding: 0;
+                                margin: 0;
+                                /* background-color: lightseagreen; */
+                            }
+                                .buttonDismiss,.buttonChangelog{
+                                    font-family: "Atkinson Hyperlegible  Next", sans-serif;
+                                    width: 51px;
+                                    height: 20px;
+                                    gap: 8px;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    cursor: pointer;
+                                    background: none;
+                                    border: none;
+                                    outline: none;
+                                    padding: 0;
+                                    margin: 0;
+                                    box-shadow: none;
+                                }
+                                 .buttonDismiss:hover,.buttonChangelog:hover{
+                                    /* text-decoration: underline; */
+                                    color: hsla(4, 74%, 49%, 1);
+                                    transform: scale(1.01);
+                                    transition: all 0.2s ease-in-out;
+                                 }
+
+    }
