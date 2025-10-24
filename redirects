@@ -1,0 +1,4 @@
+/styles/*   /styles/:splat   200
+/images/*   /images/:splat   200
+/*.js       /:splat          200
+/*.css      /:splat          200
